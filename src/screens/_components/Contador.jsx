@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Contador = () => {
 
@@ -8,12 +8,32 @@ const Contador = () => {
 
     const handleContador = () => {
         setContador (contador + 1);
-    
     };
     const handle2Contador = () => {
     
         setContador (contador - 1);
     };
+
+//useEffect para controlar ciclo de vida
+
+    useEffect (() => {
+        setContador (12);
+    }, []);
+
+    
+    useEffect (() => {
+        if (contador === 15){
+            alert ('contador es 15');
+        }
+
+    }, [contador]);
+
+//función especial que se ejecuta cuando el componente se desmonta
+useEffect (() =>{
+    return () => {
+        console.log ('el component se desmontó');
+    }
+});
 
     return (
         <>
