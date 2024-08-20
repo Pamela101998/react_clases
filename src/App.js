@@ -1,5 +1,6 @@
 import './App.css';
-import Default from './screens/Default';
+
+import Default from "./screens/Default";
 
 function App() {
   return (

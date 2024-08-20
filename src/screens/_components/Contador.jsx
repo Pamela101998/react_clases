@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 const Contador = () => {
 
-
+//UseState tiene 2 partes, una variable, y una función que le cambia su valor
     const [contador, setContador]= useState(10);
 
 
