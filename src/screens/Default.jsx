@@ -3,10 +3,14 @@ import Description from "./_components/Description";
 import OpenLink from "../components/OpenLink";
 import LessonInfo from './_components/LessonInfo';
 
+import Contador from './_components/Contador';
+
+
 const Default = () => {
     return (
         <>
             <header className="App-header">
+                <Contador />
                 <Logo />
                 <Description />
                 <OpenLink 
