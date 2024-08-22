@@ -6,8 +6,8 @@ import LoginForm from "../screens/Forms/LoginForm";
 
 import App from "../App";
 
-const basename = process.env.NODE_ENV === 'production' ? '/react_clases'
- : '/';
+
+const basename = process.env.NODE_ENV === 'production' ? '/react_clases' : '/';
 
 const routes = createBrowserRouter([
     {
